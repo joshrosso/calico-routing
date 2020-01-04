@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: pod-1
+spec:
+  nodeName: worker-1
+  containers:
+    - name: pod-1
+      image: joshrosso/calico-net:1.0
+      command:
+        - sleep
+        - "3600"
